@@ -43,7 +43,7 @@
 .main{
     position: relative;
     background: url(blkdesk.jpg);
-    min-height: 100vh;
+    min-height: auto;
     background-size: cover;
     background-position: left;
     padding: 280px 0 220px;
@@ -100,7 +100,6 @@
 }
 
 .bizimage{
-    height: 500px;
     position: relative;
     left: 250px;
     width: auto ;
@@ -113,10 +112,11 @@
     zoom: 1.0 ;
   }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:800px) {
     .main {
     background-image: url(blkdesk.jpg);
     background-repeat: no-repeat;
     background-size: contain ;
+    width: 100% ;
     }
   }
