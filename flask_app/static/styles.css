@@ -2,16 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
 }
 
 #header{
     position: absolute;
     z-index: 10;
     width: 100%;
-}
-
-.navbar{
-    padding: 50px;
 }
 
 .navbar-brand{
@@ -103,6 +100,63 @@
     max-width: 100%;
     position: relative;
 }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: padding: 50px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
@@ -112,6 +166,32 @@
     body {
       background-color: black;
       background: url(blkdesk_mobile1.jpg)
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+        background-color: black;
+        border-radius: 5px;
+    }
+    .navbar-links li a {
+        pad: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
     }
   }
 
