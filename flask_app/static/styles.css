@@ -98,7 +98,7 @@
 
 .bizimage{
     display: flex;
-    justify-content: center;
+
     height: 600px;
     max-width: 100%;
     position: relative;
