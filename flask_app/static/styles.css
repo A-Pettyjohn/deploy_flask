@@ -97,8 +97,12 @@
 }
 
 .bizimage{
+    display: flex;
+    justify-content: center;
+    height: 600px;
     max-width: 100%;
     position: relative;
+    object-fit: scale-down;
 }
 
 
@@ -155,6 +159,13 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+.gitLink {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
 }
 
 @viewport {
