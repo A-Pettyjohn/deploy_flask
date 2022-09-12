@@ -176,7 +176,7 @@ body {
 @media only screen and (max-width: 767px) {
     body {
       background-color: black;
-      background: url(blkdesk_mobile2.jpg)
+      background: url(blkdesk_mobile1.jpg)
     }
     .toggle-button {
         display: flex;
